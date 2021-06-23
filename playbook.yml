@@ -6,6 +6,6 @@
       args:
         executable: /bin/bash
     - name: 'Reboot...'
-      reboot:
+      shell: /usr/sbin/reboot
 ...
 
