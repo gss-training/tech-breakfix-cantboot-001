@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  tasks:
+    - name: 'Execute changes'
+      shell: /root/tech-breakfix-cantboot-001 break
+      args:
+        executable: /bin/bash
+...
+
