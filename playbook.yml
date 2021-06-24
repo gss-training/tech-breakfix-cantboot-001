@@ -5,6 +5,12 @@
       file:
         path: "/tech-breakfix-cantboot-001"
         state: touch
+    - name: 'Execute changes'
+      shell: /usr/local/bin/tech-breakfix-cantboot-001 break
+      args:
+        executable: /bin/bash
+    - name: 'Reboot...'
+      shell: /usr/sbin/reboot
 
 ...
 
